@@ -4,9 +4,10 @@ local white = colors.white
 local green = colors.green
 local gray = colors.gray
 local lime = colors.lime
+local red = colors.red
 
 -- System vars
-local version = "Build: 11"
+local version = "Build: 12"
 local autor = "By m0d2r"
 local line = "---------------------------------------------------"
 
@@ -45,17 +46,35 @@ term.setTextColor(white)
 
 -- Status
 term.write("Starting services")
-textutils.slowPrint(".....")
+textutils.slowPrint("......")
+term.setTextColor(green)
+term.write("(OK)")
+term.setTextColor(white)
 term.write("Starting System")
 textutils.slowPrint(".......")
+term.setTextColor(green)
+term.write("(OK)")
+term.setTextColor(white)
 term.write("Starting shell")
 textutils.slowPrint("......")
+term.setTextColor(green)
+term.write("(OK)")
+term.setTextColor(white)
 term.write("Loading system information")
-textutils.slowPrint("...")
+textutils.slowPrint(".....")
+term.setTextColor(green)
+term.write("(OK)")
+term.setTextColor(white)
 term.write("Loading commands")
 textutils.slowPrint("....") 
+term.setTextColor(green)
+term.write("(OK)")
+term.setTextColor(white)
 term.write("Loading GUI")
 textutils.slowPrint("......")
+term.setTextColor(green)
+term.write("(OK)")
+term.setTextColor(white)
 
 -- Information
 term.clear()
@@ -112,6 +131,10 @@ while true do
         else
             print("Incorrect option!")
         end
+
+        -- credits
+    elseif input == "credits" then
+        print("Created by:\nStormPatrikCZ","\nTesters: \nMedas_cz45")
     else
         shell.run(input)
     end
