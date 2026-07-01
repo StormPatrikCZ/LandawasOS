@@ -44,6 +44,9 @@ term.setCursorPos(1,2)
 term.setTextColor(white)
 
 -- Status
+term.setTextColor(green)
+term.write("(OK)")
+term.setTextColor(white)
 term.write("Starting services")
 textutils.slowPrint("......")
 term.setTextColor(green)
