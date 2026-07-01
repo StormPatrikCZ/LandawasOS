@@ -11,15 +11,14 @@ local version = "Build: 12"
 local autor = "By m0d2r"
 local line = "---------------------------------------------------"
 
--- install update for update.lua
-print("Updating update.lua")
-shell.run("delete update.lua")
-shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/update.lua update.lua")
-
 -- Start up
 term.setTextColor(orange)
 term.setBackgroundColor(gray)
 term.clear()    
+-- install update for update.lua
+print("Updating update.lua")
+shell.run("delete update.lua")
+shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/update.lua update.lua")
 
 -- Text
 term.setCursorPos(1,1)
