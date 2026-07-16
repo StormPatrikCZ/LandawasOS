@@ -7,16 +7,19 @@ local lime = colors.lime
 local red = colors.red
 
 -- System vars
-local version = "Build: 12"
+local version = "Build: 15"
 local autor = "By m0d2r"
 local line = "---------------------------------------------------"
 
 -- Start up
 term.setTextColor(orange)
 term.setBackgroundColor(gray)
-term.clear()    
+term.clear()
+
 -- install update for update.lua
+term.setTextColor(green)
 print("Updating update.lua")
+term.setTextColor(white)
 shell.run("delete update.lua")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/update.lua update.lua")
 
