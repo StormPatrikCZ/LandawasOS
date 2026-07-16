@@ -1,56 +1,96 @@
--- vars
+-- vars colors
 local orange = colors.orange
 local white = colors.white
 local green = colors.green
-local version = "V0.7.4.0.3"
+local gray = colors.gray
+local lime = colors.lime
+local red = colors.red
+
+-- System vars
+local version = 0.7.5
 local autor = "By m0d2r"
+local line = "---------------------------------------------------"
 
--- Beggining
+-- Start up
+term.setTextColor(orange)
+term.setBackgroundColor(gray)
 term.clear()
-term.setCursorPos(1,1)
 
--- install update
+-- install update for update.lua
+term.setTextColor(green)
 print("Updating update.lua")
+term.setTextColor(white)
 shell.run("delete update.lua")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/update.lua update.lua")
 
-term.clear()
+-- Text
 term.setCursorPos(1,1)
+print(line)
+term.setTextColour(lime)
+
+print("LandaWasOS")
+print(version)
+print(autor)
+
+term.setTextColor(orange)
+term.setCursorPos(1,18)
+print(line)
+sleep(2)
+term.clear()
 
 -- Text
-term.write("Starting services ")
-textutils.slowPrint("........")
-term.write("Starting System ")
-textutils.slowPrint(".......")
-term.write("Loading system information ")
-textutils.slowPrint("..")
-term.write("Starting shell ")
-textutils.slowPrint("......")
-
-print("")
-print("boot completed...")
-
--- clean
-sleep(1)
-term.clear()
 term.setCursorPos(1,1)
-
--- OS info
-term.setTextColor(green)
-term.write(version)
-term.setTextColor(orange)
+print(line)
+term.setCursorPos(1,18)
+print(line)
 term.setCursorPos(1,2)
-term.write(autor)
+term.setTextColor(white)
+
+-- Status
+term.setTextColor(green)
+term.write("(OK)")
+term.setTextColor(white)
+term.write("Starting services")
+textutils.slowPrint("......")
+term.setTextColor(green)
+term.write("(OK)")
+term.setTextColor(white)
+term.write("Starting System")
+textutils.slowPrint(".......")
+term.setTextColor(green)
+term.write("(OK)")
+term.setTextColor(white)
+term.write("Starting shell")
+textutils.slowPrint("......")
+term.setTextColor(green)
+term.write("(OK)")
+term.setTextColor(white)
+term.write("Loading system information")
+textutils.slowPrint(".....")
+term.setTextColor(green)
+term.write("(OK)")
+term.setTextColor(white)
+term.write("Loading commands")
+textutils.slowPrint("....") 
+term.setTextColor(green)
+term.write("(OK)")
+term.setTextColor(white)
+term.write("Loading GUI")
+textutils.slowPrint("......")
+term.setTextColor(green)
+term.write("(OK)")
+term.setTextColor(white)
 
 -- Information
-term.setCursorPos(1,4)
-term.setTextColor(white)
-print("Type programs for all programs")
+term.clear()
+term.setCursorPos(1,16)
+print("You can use progrmas to show list of programs")
+sleep(1)
 
 -- program loop
-term.setCursorPos(1,6)
-while true do
+term.setCursorPos(1,17)
 
+while true do
     -- User
     term.setTextColor(green)
     write("LandaWasOS")
@@ -59,35 +99,48 @@ while true do
     
     local input = read()
     
-    -- Build in commands
-    if input == "exit" then
-        break
+    --system info
+    if input == "fetch" then
 
-    elseif input == "fetch" then
         write("OS: ")
         term.setTextColor(green)
         print("LandaWasOS")
         term.setTextColor(white)
-        write("OS Version: ")
+        write(version)
         term.setTextColor(green)
-        print(version)
-        print("autor", autor)
+        print(autor)
         term.setTextColor(white)
         sleep(1)
+    
+    -- Power options
+    elseif input == "power" then
         
-    elseif input == "reboot" then
-        term.setTextColor(orange)
-        print("Rebooting...")
-        sleep(1)
-        os.reboot()
-    
-    elseif input == "shutdown" then
-        tern.setTextColor(orange)
-        print("Shutting down...")
-        sleep(1)
-        os.shutdown()
-    
+        print("Power options: \n1. r - reboot\n2. s - shutdown\n3. c - cancel")
+        local input = read()
+
+        -- reboot
+        if input == "r" then
+            print("rebooting...")
+            sleep(1)
+            os.reboot()
+        
+        -- shutdown
+        elseif input == "s" then 
+            print("Shutting down...")
+            sleep(1)
+            os.shutdown()
+            
+        elseif input == "c" then
+        
+        else
+            print("Incorrect option!")
+        end
+
+        -- credits
+    elseif input == "credits" then
+        print("Created by:\nStormPatrikCZ","\nTesters: \nMedas_cz45")
     else
         shell.run(input)
     end
+end
 end
