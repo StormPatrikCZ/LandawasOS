@@ -58,71 +58,27 @@ Then:
 ```lua
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/install.lua install.lua"); shell.run("install.lua")
 ```
+3. done
 
-3. Follow the on-screen instructions
-4. Done! Your system is ready to use
+This will run the installer to install LandaWasOS to the computer
 
-### Manual Installation
+# Manual install
+1. Shut dwon the computer
+2. leave the world
+3. download the zip file
+4. Open your game folder
+5. Open your saves folder
+6. Open your ComputerCraft folder
+7. Open your Computer ID folder
 
-If you prefer to install manually:
+if you not sure what id is it type ID in your computer
 
-1. Shut down your computer in-game
-2. Exit the world
-3. Download the `.zip` file from the [latest release](../../releases)
-4. Locate your save folder:
-   - Open your Minecraft saves folder
-   - Find `ComputerCraft` → `Computer ID` folder (type `id` in-game to find your ID)
-5. Copy the extracted files to that folder
-6. Load your world and start the computer
+8. Exit world
+9. Copy the zipfile to the computer
+10. extract it
+11. Load your world
+12. Start up your computer
 
-## 🔧 Usage
-
-### Basic Commands
-
-```lua
-clean           -- Clean up old update files
-update          -- Check for and install updates
-commands        -- List available commands
-```
-
-### Creating Custom Apps
-
-Place your `.lua` files in the `/Programs/` directory to add custom applications.
-
-## Roadmap
-
-- [ ] File manager with GUI
-- [ ] Package manager for third-party apps
-- [ ] Text editor
-- [ ] Network utilities
-- [ ] Process management
-- [ ] User accounts and permissions
-
-## Reporting Bugs
-
-Found a bug? Please report it using [GitHub Issues](../../issues) with:
-
-1. Steps to reproduce
-2. Expected behavior
-3. Actual behavior
-4. Your system version (if applicable)
-
-## License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
-## Author
-
-**m0d2r** — [GitHub](https://github.com/m0d2r)
-
-## Show Your Support
-
-If you find LandawasOS useful, give it a star! And feel free to fork and contribute.
-
----
-
-<div align="center">
-
-Made with ❤️ for the ComputerCraft community
-
-</div>
+# Star history
+<img width="2604" height="525
+  2010" alt="star-history-202639" src="https://github.com/user-attachments/assets/ccc8f8fd-a53b-47b3-a66a-118c1e20a599" />
