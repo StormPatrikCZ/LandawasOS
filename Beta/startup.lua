@@ -6,9 +6,7 @@ local gray = colors.gray
 local lime = colors.lime
 local red = colors.red
 
--- System vars
-local version = "Build: 16"
-local autor = "By m0d2r"
+-- Short vars
 local line = "---------------------------------------------------"
 
 -- Start up

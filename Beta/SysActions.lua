@@ -55,7 +55,7 @@ if type_install == "b" then
         print("Restart Canceled.")
         term.setTextColor(white)
     end
-else
+    
     term.setTextColor(red)
     print("Update canceled!")
     term.setTextColor(white)

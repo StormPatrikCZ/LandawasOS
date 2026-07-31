@@ -3,7 +3,7 @@ local white = colors.white
 local green = colors.green
 
 -- System vars
-local version = "Build: 16"
+local version = "Build: 17"
 local autor = "By m0d2r"
 
 -- Information
@@ -54,6 +54,7 @@ while true do
             os.shutdown()
             
         elseif input == "c" then
+            print("Canceled!")
         
         else
             print("Incorrect option!")
