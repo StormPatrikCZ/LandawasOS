@@ -1,45 +1,128 @@
 # LandawasOS
-LandawasOS is an operating system for cc: tweaked i hope is this OS any good im still working on more updates to make it even better, Please report bugs using issues on github thank you
 
-It is recommended to use advanced computer for the best experience
+<div align="center">
 
-Apps:
-1. clean - Clear old update files   
-2. Update - Updates the system to latest version
-3. commands - Shows Installed commands (system-only for now)
-4. easy installer - Installs the system
+![LandawasOS Banner](https://raw.githubusercontent.com/m0d2r/LandawasOS/main/banner.png)
 
-# Instalation Guide
-1. Run this in the terminal
-```LUA
+**A lightweight operating system for ComputerCraft: Tweaked**
+
+[![Version](https://img.shields.io/badge/version-BETA%2016-blue.svg)](https://github.com/m0d2r/LandawasOS)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+</div>
+
+---
+
+## About
+
+LandawasOS is a custom operating system designed for [ComputerCraft: Tweaked](https://computercraft.gg/) — a Minecraft mod that adds programmable computers. It provides a user-friendly shell environment with built-in system utilities and an easy installation process.
+
+> ⚠️ **Note:** This project is still under active development. New features and improvements will not be released frequently, Please keep that in mind
+
+## Features
+
+- **Fast & Lightweight** — Minimal resource usage, optimized for performance
+- **Built-in Utilities** — Clean, Update, Commands, and more
+- **Easy Installation** — One-command installer or manual setup
+- **User-Friendly Shell** — Simple CLI interface for navigating the system
+- **Auto-Updates** — Keep your system up to date with one command
+
+## System Requirements
+
+- **Minecraft** with [ComputerCraft: Tweaked](https://computercraft.gg/) installed
+- **Advanced Computer** recommended for best experience
+- Minecraft 1.20.x (depending on your CC:T version)
+
+## Included Apps
+
+| Command | Description |
+|---------|-------------|
+| `clean` | Remove old update files and free up disk space |
+| `update` | Update LandawasOS to the latest version |
+| `commands` | List all installed system commands |
+| `easy installer` | Guided installation wizard for new users |
+
+## Installation
+
+### Quick Install (Recommended)
+
+1. Start your ComputerCraft computer
+2. Run the following commands:
+
+```lua
 lua
 ```
-3. them run this:
 
-```LUA
+Then:
+
+```lua
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/install.lua install.lua"); shell.run("install.lua")
 ```
-3. done
 
-This will run the installer to install LandaWasOS to the computer
+3. Follow the on-screen instructions
+4. Done! Your system is ready to use
 
-# Manual install
-1. Shut dwon the computer
-2. leave the world
-3. download the zip file
-4. Open your game folder
-5. Open your saves folder
-6. Open your ComputerCraft folder
-7. Open your Computer ID folder
+### Manual Installation
 
-if you not sure what id is it type ID in your computer
+If you prefer to install manually:
 
-8. Exit world
-9. Copy the zipfile to the computer
-10. extract it
-11. Load your world
-12. Start up your computer
+1. Shut down your computer in-game
+2. Exit the world
+3. Download the `.zip` file from the [latest release](../../releases)
+4. Locate your save folder:
+   - Open your Minecraft saves folder
+   - Find `ComputerCraft` → `Computer ID` folder (type `id` in-game to find your ID)
+5. Copy the extracted files to that folder
+6. Load your world and start the computer
 
-# Star history
-<img width="2604" height="525
-  2010" alt="star-history-202639" src="https://github.com/user-attachments/assets/ccc8f8fd-a53b-47b3-a66a-118c1e20a599" />
+## 🔧 Usage
+
+### Basic Commands
+
+```lua
+clean           -- Clean up old update files
+update          -- Check for and install updates
+commands        -- List available commands
+```
+
+### Creating Custom Apps
+
+Place your `.lua` files in the `/Programs/` directory to add custom applications.
+
+## Roadmap
+
+- [ ] File manager with GUI
+- [ ] Package manager for third-party apps
+- [ ] Text editor
+- [ ] Network utilities
+- [ ] Process management
+- [ ] User accounts and permissions
+
+## Reporting Bugs
+
+Found a bug? Please report it using [GitHub Issues](../../issues) with:
+
+1. Steps to reproduce
+2. Expected behavior
+3. Actual behavior
+4. Your system version (if applicable)
+
+## License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+**m0d2r** — [GitHub](https://github.com/m0d2r)
+
+## Show Your Support
+
+If you find LandawasOS useful, give it a star! And feel free to fork and contribute.
+
+---
+
+<div align="center">
+
+Made with ❤️ for the ComputerCraft community
+
+</div>
