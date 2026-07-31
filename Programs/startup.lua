@@ -2,7 +2,7 @@
 local orange = colors.orange
 local white = colors.white
 local green = colors.green
-local version = "V0.7.4.0.3"
+local version = "V0.7.5.0.1"
 local autor = "By m0d2r"
 
 -- Beggining
