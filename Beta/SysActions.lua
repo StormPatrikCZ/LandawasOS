@@ -1,23 +1,67 @@
+-- vars colors
+local green = colors.green
+local white = colors.white
+local red = colors.red
+
 -- Variables
 local type_install
 local choice
 local reboot
 local input_name
+-- local files = ("programs.lua", "SysActions.lua", "startup.lua")
 
 -- short
 local line = "---------------------------------------------------"
+local del = shell.run
 
 -- Startup
 term.clear()
 term.setCursorPos(1,1)
 
 -- Ask
-print("Sys actions V0.1")
-print("1 = uninstall os\n2 = OS clear\n3 = Rename computer")
+print("Sys actions V0.1.1")
+print("1. Update\n2 = Uninstall os\n3 = Clear old files\n4 = Rename computer")
 choice = read()
 
+if type_install == "b" then
+    print("Deleting old System apps...")
+
+    -- Files delete
+    shell.run("delete startup.lua")
+    shell.run("delete SysActions.lua")
+    term.clear()
+    
+    term.setTextColor(green)
+    print("Old files has been deleted")
+    print("Downloading new System apps...")
+    term.setTextColor(white)
+    
+    -- Files download
+    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/startup.lua startup.lua")
+    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/SysActions.lua SysActions.lua")
+    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/programs.lua programs.lua")
+    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/shell.lua shell.lua")
+    term.setTextColor(green)
+    print("All Beta Updates has been installed Sucesffuly")
+    term.setTextColor(white)
+
+    -- Reboot
+    print("Restartt Y/N:")
+    reboot_re = read()
+    if reboot_re == "y" then
+        os.reboot()
+    else
+        term.setTextColor(red)
+        print("Restart Canceled.")
+        term.setTextColor(white)
+    end
+else
+    term.setTextColor(red)
+    print("Update canceled!")
+    term.setTextColor(white)
+
 -- Uninstall
-if choice == "1" then
+elseif choice == "2" then
     print("Uninstaller")
     
     print("Do you want to uninstall LandaWasOS?: ")
@@ -30,11 +74,12 @@ if choice == "1" then
         shell.run("delete programs.lua")
         shell.run("delete shell.lua")
         shell.run("delete cůean.lua")
+        shell.run("delete GUI.lua")
     else
         print("Uninstallation canceled")
     end
     
-elseif choice == "2" then
+elseif choice == "3" then
     term.setCursorPos(1,1)
     term.clear()
     
@@ -64,7 +109,7 @@ elseif choice == "2" then
         print(line)
     end
 
-elseif choice == "3" then
+elseif choice == "4" then
     print("New name: ")
     input_name = read()
     if input_name == "" then
