@@ -1,15 +1,4 @@
-# LandawasOS
-
-<div align="center">
-
-![LandawasOS Banner](https://raw.githubusercontent.com/m0d2r/LandawasOS/main/banner.png)
-
-**A lightweight operating system for ComputerCraft: Tweaked**
-
-[![Version](https://img.shields.io/badge/version-BETA%2016-blue.svg)](https://github.com/m0d2r/LandawasOS)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-
-</div>
+# LandaWasOS
 
 ---
 
