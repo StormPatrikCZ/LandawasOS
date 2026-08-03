@@ -1,7 +1,4 @@
 # LandaWasOS
-
----
-
 ## About
 
 LandawasOS is a custom operating system designed for [ComputerCraft: Tweaked](https://computercraft.gg/) — a Minecraft mod that adds programmable computers. It provides a user-friendly shell environment with built-in system utilities and an easy installation process.
