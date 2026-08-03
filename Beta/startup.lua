@@ -36,7 +36,6 @@ term.setCursorPos(1,1)
 print(line)
 term.setCursorPos(1,18)
 print(line)
-
 term.setCursorPos(1,2)
 term.setTextColor(white)
 

@@ -3,7 +3,7 @@ local white = colors.white
 local green = colors.green
 
 -- System vars
-local version = "Build: 17"
+local version = "Build: 18"
 local autor = "By m0d2r"
 
 -- Information
