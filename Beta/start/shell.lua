@@ -35,6 +35,12 @@ while true do
         term.setTextColor(white)
         sleep(1)
     
+    -- program list
+    elseif input == "programs" then
+        
+        print("List of installed programs (2)")
+        print("programs.lua\nSysActions.lua")
+
     -- Power options
     elseif input == "power" then
         

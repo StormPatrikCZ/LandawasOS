@@ -37,10 +37,10 @@ if type_install == "b" then
     term.setTextColor(white)
     
     -- Files download
-    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/startup.lua startup.lua")
-    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/SysActions.lua SysActions.lua")
-    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/programs.lua programs.lua")
-    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/shell.lua shell.lua")
+    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/start/startup.lua startup.lua")
+    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/tools/SysActions.lua SysActions.lua")
+    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/tools/programs.lua programs.lua")
+    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/start/shell.lua shell.lua")
     term.setTextColor(green)
     print("All Beta Updates has been installed Sucesffuly")
     term.setTextColor(white)
@@ -68,13 +68,10 @@ elseif choice == "2" then
     choice = read()
 
     if choice == "y" then
-        shell.run("delete update.lua")
         shell.run("delete startup.lua")
         shell.run("delete commands.lua")
         shell.run("delete programs.lua")
         shell.run("delete shell.lua")
-        shell.run("delete cůean.lua")
-        shell.run("delete GUI.lua")
     else
         print("Uninstallation canceled")
     end
