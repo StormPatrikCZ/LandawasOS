@@ -41,6 +41,16 @@ while true do
         print("List of installed programs (2)")
         print("programs.lua\nSysActions.lua")
 
+    elseif input == "commands"
+    
+        print("List of installed systen commands (6).")
+        print("Commands - full list of commands.")
+        print("Clean - Cleans your system for you.")
+        print("update - updater.")
+        print("fetch - Shows information about the system.")
+        print("exit - exits custom shell.")
+        print("power - Shows power options.")
+
     -- Power options
     elseif input == "power" then
         
