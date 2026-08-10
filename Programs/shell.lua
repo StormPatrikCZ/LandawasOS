@@ -1,4 +1,4 @@
--- Color vars
+-- vars colors
 local white = colors.white
 local green = colors.green
 

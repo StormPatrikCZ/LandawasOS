@@ -8,7 +8,6 @@ local type_install
 local choice
 local reboot
 local input_name
--- local files = ("programs.lua", "SysActions.lua", "startup.lua")
 
 -- short
 local line = "---------------------------------------------------"
