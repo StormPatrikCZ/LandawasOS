@@ -7,7 +7,7 @@ local lime = colors.lime
 local red = colors.red
 
 -- System vars
-local version = "V0.8.0.1.1"
+local version = "V0.8.0.1.2"
 local autor = "By m0d2r"
 
 -- Short vars
@@ -61,7 +61,7 @@ term.setTextColor(white)
 
 print("")
 print("Boot Complete")
-term.slowPrint("..........")
+textutils.slowPrint("..........")
 sleep(1)
 
 shell.run("shell.lua")
