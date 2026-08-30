@@ -1,5 +1,7 @@
 # BETA VERSION
-Beta versions will be unstable and may brake your system overtime please DO NOT install this on the Computer with important files on it you may lose your files
+Beta versions will be unstable and may brake your system overtime please DO NOT install this on the Computer with important files on it you may lose your thoose files
+
+it is not reccomended to use that computer on daily bases only for testing please remember that
 
 # In testing
 1. SysActions - Clean up mess, uninstall system and more

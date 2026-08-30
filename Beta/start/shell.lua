@@ -3,7 +3,7 @@ local white = colors.white
 local green = colors.green
 
 -- System vars
-local version = "Build: 18"
+local version = "Build: 21"
 local autor = "By m0d2r"
 
 -- Information
@@ -29,6 +29,7 @@ while true do
         term.setTextColor(green)
         print("LandaWasOS")
         term.setTextColor(white)
+        print("BETA VERSION NOT RECCOMENDED FOR DAILY USE")
         write(version)
         term.setTextColor(green)
         print(autor)
@@ -42,7 +43,7 @@ while true do
         print("programs.lua\nSysActions.lua")
 
     elseif input == "commands"
-    
+
         print("List of installed systen commands (6).")
         print("Commands - full list of commands.")
         print("Clean - Cleans your system for you.")
