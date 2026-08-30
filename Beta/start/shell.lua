@@ -3,7 +3,7 @@ local white = colors.white
 local green = colors.green
 
 -- System vars
-local version = "Build: 21"
+local version = "Build: 22"
 local autor = "By m0d2r"
 
 -- Information
@@ -46,8 +46,8 @@ while true do
 
         print("List of installed systen commands (6).")
         print("Commands - full list of commands.")
+        print("Programs - Full list of programs.")
         print("Clean - Cleans your system for you.")
-        print("update - updater.")
         print("fetch - Shows information about the system.")
         print("exit - exits custom shell.")
         print("power - Shows power options.")
@@ -60,12 +60,14 @@ while true do
 
         -- reboot
         if input == "r" then
+            term.setTextColor(green)
             print("rebooting...")
             sleep(1)
             os.reboot()
         
         -- shutdown
         elseif input == "s" then 
+            term.setTextColor(green)
             print("Shutting down...")
             sleep(1)
             os.shutdown()
@@ -74,8 +76,7 @@ while true do
             print("Canceled!")
         
         else
-            print("Incorrect option!")
-        end
+            print("Incorrect option! print\nPower options: \n1. r - reboot\n2. s - shutdown\n3. c - cancel")
 
         -- credits
     elseif input == "credits" then
