@@ -18,7 +18,7 @@ term.clear()
 term.setCursorPos(1,1)
 
 -- Ask
-print("Sys actions V1.0")
+print("Sys actions V1.0.1")
 print("1. Update\n2 = Uninstall os\n3 = Clear old files\n4 = Rename computer")
 choice = read()
 
@@ -69,11 +69,11 @@ elseif choice == "2" then
     choice = read()
 
     if choice == "y" then
-        shell.run("delete update.lua")
+        shell.run("delete shell.lua")
         shell.run("delete startup.lua")
         shell.run("delete commands.lua")
         shell.run("delete programs.lua")
-        shell.run("delete cůean.lua")
+        shell.run("delete SysActions.lua")
     else
         print("Uninstallation canceled")
     end
