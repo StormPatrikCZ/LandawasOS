@@ -3,7 +3,7 @@ local white = colors.white
 local green = colors.green
 
 -- System vars
-local version = "Build: 22"
+local version = "Build: 23"
 local autor = "By m0d2r"
 
 -- Information
@@ -42,7 +42,7 @@ while true do
         print("List of installed programs (2)")
         print("programs.lua\nSysActions.lua")
 
-    elseif input == "commands"
+    elseif input == "commands" then
 
         print("List of installed systen commands (6).")
         print("Commands - full list of commands.")
