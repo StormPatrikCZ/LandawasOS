@@ -8,7 +8,7 @@ LandawasOS is a custom operating system designed for [ComputerCraft: Tweaked](ht
 ## Features
 
 - **Fast & Lightweight** — Minimal resource usage, optimized for performance
-- **Built-in Utilities** — Clean, Update, Commands, and more
+- **Built-in Utilities** — SysActions, Commands, and more
 - **Easy Installation** — One-command installer or manual setup
 - **User-Friendly Shell** — Simple CLI interface for navigating the system
 - **Auto-Updates** — Keep your system up to date with one command
