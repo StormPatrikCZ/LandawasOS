@@ -3,7 +3,7 @@ local white = colors.white
 local green = colors.green
 
 -- System vars
-local version = "Build: 23"
+local version = "Build: 24"
 local autor = "By m0d2r"
 
 -- Information
@@ -77,8 +77,9 @@ while true do
         
         else
             print("Incorrect option! print\nPower options: \n1. r - reboot\n2. s - shutdown\n3. c - cancel")
+        end
 
-        -- credits
+    -- credits
     elseif input == "credits" then
         print("Created by:\nStormPatrikCZ","\nTesters: \nMedas_cz45")
     else
