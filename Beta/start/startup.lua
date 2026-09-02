@@ -17,8 +17,8 @@ term.clear()
 term.setCursorPos(1,1)
 print(line)
 term.setTextColor(green)
-print("Welcome to LandaWasOS")
-term.setCursorPos(1,10)
+print("Welcome to LandaWasOS...")
+term.setCursorPos(1,16)
 print(line)
 
 -- Start Shell
