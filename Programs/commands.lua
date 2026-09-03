@@ -1,6 +1,8 @@
+-- Clean terminal
 term.clear()
 term.setCursorPos(1,1)
 
+-- list
 print("List of installed systen commands (6).")
 print("Commands - full list of commands.")
 print("Clean - Cleans your system for you.")

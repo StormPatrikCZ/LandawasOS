@@ -61,7 +61,7 @@ term.setTextColor(white)
 
 print("")
 print("Boot Complete")
-textutils.slowPrint("..........")
+textutils.slowPrint("...........")
 sleep(1)
 
 shell.run("shell.lua")

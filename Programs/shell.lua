@@ -3,7 +3,7 @@ local white = colors.white
 local green = colors.green
 
 -- System vars
-local version = "V0.8.0.1.3"
+local version = "V0.8.0.2"
 local autor = "By m0d2r"
 
 -- Information
@@ -13,8 +13,7 @@ print("You can use progrmas to show list of programs")
 sleep(1)
 
 while true do
-
-    -- User
+    -- User input
     term.setTextColor(green)
     write("LandaWasOS")
     term.setTextColor(white)
@@ -54,7 +53,7 @@ while true do
             os.shutdown()
             
         elseif input == "c" then
-            print("Canceled!")
+            print("Operation has been cenceled!")
         
         else
             print("Incorrect option!")
@@ -62,7 +61,7 @@ while true do
 
         -- credits
     elseif input == "credits" then
-        print("Created by:\nStormPatrikCZ","\nTesters: \nMedas_cz45")
+        print("Created by:\nStormPatrikCZ","\nTesters: \n1. Medas_cz45")
     else
         shell.run(input)
     end

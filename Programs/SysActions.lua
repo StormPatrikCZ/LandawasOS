@@ -43,7 +43,7 @@ if choice == "1" then
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/programs.lua programs.lua")
 
     term.setTextColor(green)
-    print("All Beta Updates has been installed Sucesffuly")
+    print("All Beta Updates has been installed Sucessfuly")
     term.setTextColor(white)
 
     -- Reboot
@@ -53,7 +53,7 @@ if choice == "1" then
         os.reboot()
     else
         term.setTextColor(red)
-        print("Restart Canceled.")
+        print("Restart Canceled!")
         term.setTextColor(white)
     end
     
@@ -89,11 +89,6 @@ elseif choice == "3" then
     -- clean
     if choice == "y" then
         print("Clearning Unused files from updates")
-        shell.run("delete UpdateBeta.lua")
-        shell.run("delete start.lua")
-        shell.run("delete cleaner.lua")
-        shell.run("delete AutoUpd.lua")
-        shell.run("delete install.lua")
         shell.run("delete startupBeta.lua")
         shell.run("delete uninstall.lua")
         shell.run("delete startupBeta.lua")
@@ -115,9 +110,10 @@ elseif choice == "4" then
     if input_name == "" then
         os.setComputerLabel(input_name)
     else
-        print("Name cannot be applied, cannot be empty...")
+        print("Name cannot be applied, it cannot be empty...")
     end
     
 else
     print("Invalid operation, select a correct number: ")
-end
+    sleep(1)
+    shell.run("start SysActions.lua")
