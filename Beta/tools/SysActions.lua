@@ -21,11 +21,11 @@ term.clear()
 term.setCursorPos(1,1)
 
 -- Ask
-print("Sys actions V0.1.1")
+print("Sys actions V0.1.2")
 print("1. Update\n2 = Uninstall os\n3 = Clear old files\n4 = Rename computer")
 choice = read()
 
-if type_install == "b" then
+if type_install == "1" then
     print("Deleting old System apps...")
 
     -- Files delete
