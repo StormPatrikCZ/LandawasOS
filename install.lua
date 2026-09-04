@@ -1,14 +1,14 @@
 -- variables
 local reboot_re
 local type_install
-local Floppy_copy
 
 -- Files (RESERVED FOR FUTURE USE)
+local Floppy_copy
 local files = {
-    "startup.lua"
-    "shell.lua"
-    "commands.lua"
-    "programs.lua"
+    "startup.lua",
+    "shell.lua",
+    "commands.lua",
+    "programs.lua",
 }
 
 -- color variables
@@ -52,7 +52,7 @@ if type_install == "r" then
     Floppy_copy = read()
     if Floppy_copy == "y" then
         -- Installing to floppy disk
-        
+        print("This feature is comming soon...")
     else
         -- Notice
         term.clear()

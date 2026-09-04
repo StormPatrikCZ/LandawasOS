@@ -75,7 +75,7 @@ elseif choice == "2" then
         shell.run("delete programs.lua")
         shell.run("delete SysActions.lua")
     else
-        print("Uninstallation canceled")
+        print("Uninstallation canceled! ")
     end
     
 elseif choice == "3" then
