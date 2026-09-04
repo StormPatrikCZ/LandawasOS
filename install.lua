@@ -23,7 +23,7 @@ term.clear()
 term.setCursorPos(1,1)
 
 -- information
-print("installer version: 0.4.1")
+print("installer version: 0.4.2")
 sleep(3)
 
 print("select install type:\nr = Release\nb = Beta\nx = Exit")
@@ -86,13 +86,12 @@ elseif type_install == "b" then
     print("LandaWasOS has been installed succesfuly")
     term.setTextColor(white)
     sleep(1)
-else
-    shell.run("start install.lua")
     
 -- exit install
 elseif type_install == "x" then
     exit
-end
+else
+    shell.run("start shell.lua")
 
 -- Reboot
 print("Restartt Y/N:")
