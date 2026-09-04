@@ -62,7 +62,6 @@ if type_install == "r" then
         term.setTextColor(white)
         sleep(1)
     end
-end
 
 -- Beta
 elseif type_install == "b" then
@@ -91,8 +90,7 @@ elseif type_install == "b" then
 elseif type_install == "x" then
     exit
 else
-    shell.run("start shell.lua")
-
+    print("Invalid option...")
 -- Reboot
 print("Restartt Y/N:")
 reboot_re = read()
