@@ -3,7 +3,7 @@ local white = colors.white
 local green = colors.green
 
 -- System vars
-local version = "Build: 26"
+local version = "Build: 27"
 local autor = "By m0d2r"
 
 -- Information
@@ -84,5 +84,8 @@ while true do
         print("Created by:\nStormPatrikCZ","\nTesters: \nMedas_cz45")
     else
         shell.run(input)
+
+    elseif input == "exit" then
+        print("EXITING...")
     end
 end
