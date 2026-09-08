@@ -3,7 +3,7 @@ local white = colors.white
 local green = colors.green
 
 -- System vars
-local version = "Build: 27"
+local version = "Build: 28"
 local autor = "By m0d2r"
 
 -- Information
@@ -82,10 +82,14 @@ while true do
     -- credits
     elseif input == "credits" then
         print("Created by:\nStormPatrikCZ","\nTesters: \nMedas_cz45")
-    else
-        shell.run(input)
 
     elseif input == "exit" then
         print("EXITING...")
+        break
+    else
+        if not shell.run(input) then
+            print("Invalid option. Type commands for help!")
+            shell.run("shell.lua")
+        end
     end
 end
