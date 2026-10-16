@@ -7,10 +7,10 @@ local line = "---------------------------------------------------"
 
 -- Doenload SysActions.lua
 term.setCursorPos(1,1)
-print("Deleting old SysActions.lua...")
+print("Updating SysActions.lua...")
 shell("delete SysActions.lua")
-print("Updating new SysActions.lua...")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/tools/SysActions.lua SysActions.lua")
+print("Updated SysActions.lua...")
 term.clear()
 
 -- StartUp

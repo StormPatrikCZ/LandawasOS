@@ -3,7 +3,7 @@ local white = colors.white
 local green = colors.green
 
 -- System vars
-local version = "Build: 28"
+local version = "Build: 29"
 local autor = "By m0d2r"
 
 -- Information
@@ -12,19 +12,18 @@ term.setCursorPos(1,16)
 print("You can use progrmas to show list of programs")
 sleep(1)
 
+-- Shell Loop
 while true do
-
     -- User
     term.setTextColor(green)
     write("LandaWasOS")
     term.setTextColor(white)
     write(" > ")
-    
+
     local input = read()
-    
+
     --system info
     if input == "fetch" then
-
         write("OS: ")
         term.setTextColor(green)
         print("LandaWasOS")
@@ -35,16 +34,14 @@ while true do
         print(autor)
         term.setTextColor(white)
         sleep(1)
-    
+
     -- program list
     elseif input == "programs" then
-        
         print("List of installed programs (2)")
         print("programs.lua\nSysActions.lua")
 
     elseif input == "commands" then
-
-        print("List of installed systen commands (6).")
+        print("List of systen commands (6).")
         print("Commands - full list of commands.")
         print("Programs - Full list of programs.")
         print("Clean - Cleans your system for you.")
@@ -54,10 +51,8 @@ while true do
 
     -- Power options
     elseif input == "power" then
-        
         print("Power options: \n1. r - reboot\n2. s - shutdown\n3. c - cancel")
         local input = read()
-
         -- reboot
         if input == "r" then
             term.setTextColor(green)
@@ -71,10 +66,9 @@ while true do
             print("Shutting down...")
             sleep(1)
             os.shutdown()
-            
+
         elseif input == "c" then
             print("Canceled!")
-        
         else
             print("Incorrect option! print\nPower options: \n1. r - reboot\n2. s - shutdown\n3. c - cancel")
         end

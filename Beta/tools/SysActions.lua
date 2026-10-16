@@ -33,6 +33,7 @@ if type_install == "1" then
     shell.run("delete SysActions.lua")
     term.clear()
     
+    -- Delete Notice
     term.setTextColor(green)
     print("Old files has been deleted")
     print("Downloading new System apps...")
@@ -44,7 +45,7 @@ if type_install == "1" then
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/tools/programs.lua programs.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/start/shell.lua shell.lua")
     term.setTextColor(green)
-    print("All Beta Updates has been installed Sucesffuly")
+    print("Your system is up to date!")
     term.setTextColor(white)
 
     -- Reboot
@@ -59,13 +60,12 @@ if type_install == "1" then
     end
     
     term.setTextColor(red)
-    print("Update canceled!")
+    print("Update canceled.")
     term.setTextColor(white)
 
 -- Uninstall
 elseif choice == "2" then
     print("Uninstaller")
-    
     print("Do you want to uninstall LandaWasOS?: ")
     choice = read()
 
@@ -77,7 +77,8 @@ elseif choice == "2" then
     else
         print("Uninstallation canceled")
     end
-    
+
+-- System clean up
 elseif choice == "3" then
     term.setCursorPos(1,1)
     term.clear()
@@ -108,6 +109,7 @@ elseif choice == "3" then
         print(line)
     end
 
+-- System name
 elseif choice == "4" then
     print("New name: ")
     input_name = read()
