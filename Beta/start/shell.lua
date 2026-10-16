@@ -3,13 +3,13 @@ local white = colors.white
 local green = colors.green
 
 -- System vars
-local version = "Build: 29"
+local version = "Build: 30"
 local autor = "By m0d2r"
 
 -- Information
 term.clear()
 term.setCursorPos(1,16)
-print("You can use progrmas to show list of programs")
+print("You can use progrmas to show list of programs...")
 sleep(1)
 
 -- Shell Loop
