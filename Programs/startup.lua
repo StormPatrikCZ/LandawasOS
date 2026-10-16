@@ -7,7 +7,7 @@ local lime = colors.lime
 local red = colors.red
 
 -- System vars
-local version = "V0.8.0.2.1"
+local version = "V0.8.0.2.2"
 local autor = "By m0d2r"
 
 -- Short vars

@@ -43,7 +43,7 @@ if choice == "1" then
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/programs.lua programs.lua")
 
     term.setTextColor(green)
-    print("All Beta Updates has been installed Sucessfuly")
+    print("Your system is up to date!")
     term.setTextColor(white)
 
     -- Reboot
