@@ -3,7 +3,7 @@ local white = colors.white
 local green = colors.green
 
 -- System vars
-local version = "V0.9"
+local version = "V0.9.0.1"
 local autor = "By m0d2r"
 
 -- Information
@@ -27,8 +27,6 @@ while true do
         write("OS: ")
         term.setTextColor(green)
         print("LandaWasOS")
-        term.setTextColor(white)
-        print("BETA VERSION NOT RECCOMENDED FOR DAILY USE")
         write(version)
         term.setTextColor(green)
         print(autor)
