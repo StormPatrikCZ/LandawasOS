@@ -23,7 +23,7 @@ term.clear()
 term.setCursorPos(1,1)
 
 -- information
-print("installer version: 0.4.2")
+print("installer version: 0.5")
 sleep(3)
 
 print("select install type:\nr = Release\nb = Beta\nx = Exit")
@@ -46,29 +46,19 @@ if type_install == "r" then
 
     -- Computer Label
     os.setComputerLabel("Landawas Operating System")
-    
-    -- Copy to floppy
-    print("Install to floppy disk?")
-    Floppy_copy = read()
-    if Floppy_copy == "y" then
-        -- Installing to floppy disk
-        print("This feature is comming soon...")
-    else
-        -- Notice
-        term.clear()
-        term.setCursorPos(1,1)
-        term.setTextColor(green)
-        Print("LandaWasOS has been installed sucessfuly")
-        term.setTextColor(white)
-        sleep(1)
-    end
+
+    -- Notice
+    term.clear()
+    term.setCursorPos(1,1)
+    term.setTextColor(green)
+    print("LandaWasOS has been installed sucessfuly")
+    term.setTextColor(white)
+    sleep(1)
 
 -- Beta
 elseif type_install == "b" then
-
     -- Beta install...
     term.clear()
-
     print("Warning: This programs are for testing")
     sleep(2)
 
@@ -80,17 +70,23 @@ elseif type_install == "b" then
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/start/shell.lua shell.lua")
     os.setComputerLabel("Landawas Operating System (BETA)")
 
-    -- Install sucess...
-    term.setTextColor(green)
-    print("LandaWasOS has been installed succesfuly")
-    term.setTextColor(white)
-    sleep(1)
+    -- Copy to floppy
+    print("Install to floppy disk?")
+    Floppy_copy = read()
     
+    if Floppy_copy == "y" then
+        print("This feature is comming soon...")
+        print("Installed to disk for now")
+    end
+
 -- exit install
 elseif type_install == "x" then
-    exit
+    print("Installation canceled.")
+    return
 else
     print("Invalid option...")
+end
+
 -- Reboot
 print("Restartt Y/N:")
 reboot_re = read()
