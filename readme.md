@@ -57,7 +57,7 @@ This will run the installer to install LandaWasOS to the computer
 6. Open your ComputerCraft folder
 7. Open your Computer ID folder
 
-if you not sure what id is it type ID in your computer
+if you not sure what id is it type ID in the computer
 
 8. Exit world
 9. Copy the zipfile to the computer
