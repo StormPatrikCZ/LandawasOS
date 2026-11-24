@@ -3,7 +3,7 @@ local white = colors.white
 local green = colors.green
 
 -- System vars
-local version = "V0.9.0.2"
+local version = "V0.9.0.3"
 local autor = "By m0d2r"
 
 -- Information
@@ -81,7 +81,6 @@ while true do
     else
         if not shell.run(input) then
             print("Invalid option. Type commands for help!")
-            shell.run("shell.lua")
         end
     end
 end

@@ -1,3 +1,9 @@
+# V 0.9.0.3
+- Fixed a bug where whole system shell restarts when you try to run any command
+
+# Install script (V0.6)
+- Added option to install to an floppy drive
+
 # Build 32
 ### System
 - Added a Global vars for System and colors
@@ -16,6 +22,3 @@
 - simplified code in Shell.lua for credits
 - Startup has been simplified
 - Power options - updated invalid option
-
-# Install script (V0.6)
-- Added option to install to an floppy drive
