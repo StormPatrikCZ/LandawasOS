@@ -92,9 +92,6 @@ elseif type_install == "b" then
 elseif type_install == "x" then
     print("Installation canceled.")
     return
-else
-    print("Invalid option...")
-end
 
 -- Reboot
 print("Restartt Y/N:")
