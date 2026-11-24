@@ -1,9 +1,10 @@
 -- variables
 local reboot_re
 local type_install
-
--- Files (RESERVED FOR FUTURE USE)
+local Floppy_Install
 local Floppy_copy
+
+-- Floppy install variable
 local files = {
     "startup.lua",
     "shell.lua",
@@ -23,7 +24,7 @@ term.clear()
 term.setCursorPos(1,1)
 
 -- information
-print("installer version: 0.5")
+print("installer version: 0.6")
 sleep(3)
 
 print("select install type:\nr = Release\nb = Beta\nx = Exit")
@@ -57,7 +58,6 @@ if type_install == "r" then
 
 -- Beta
 elseif type_install == "b" then
-    -- Beta install...
     term.clear()
     print("Warning: This programs are for testing")
     sleep(2)
@@ -75,8 +75,17 @@ elseif type_install == "b" then
     Floppy_copy = read()
     
     if Floppy_copy == "y" then
-        print("This feature is comming soon...")
-        print("Installed to disk for now")
+        print("Installing to floppy disk...")
+        print("Before installing please backup your data...")
+
+        Floppy_Install = read()
+
+        if Floppy_Install == "y" then
+            for _, file in ipairs(files) do
+                fs.copy(file, "disk/" .. file)
+            end
+        print("Installed to disk...")
+        end
     end
 
 -- exit install

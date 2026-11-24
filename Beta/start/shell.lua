@@ -1,11 +1,3 @@
--- Color vars
-local white = colors.white
-local green = colors.green
-
--- System vars
-local version = "Build: 31"
-local autor = "By m0d2r"
-
 -- Information
 term.clear()
 term.setCursorPos(1,16)
@@ -16,7 +8,7 @@ sleep(1)
 while true do
     -- User
     term.setTextColor(green)
-    write("LandaWasOS")
+    write(sys_name)
     term.setTextColor(white)
     write(" > ")
 
@@ -26,12 +18,12 @@ while true do
     if input == "fetch" then
         write("OS: ")
         term.setTextColor(green)
-        print("LandaWasOS")
+        print(sys_name)
         term.setTextColor(white)
-        print("BETA VERSION NOT RECCOMENDED FOR DAILY USE")
-        write(version)
+        print("BETA VERSION NOT RECCOMENDED FOR NORMAL USE")
+        write(sys_version)
         term.setTextColor(green)
-        print(autor)
+        print(sys_autor)
         term.setTextColor(white)
         sleep(1)
 
@@ -70,12 +62,12 @@ while true do
         elseif input == "c" then
             print("Canceled!")
         else
-            print("Incorrect option! print\nPower options: \n1. r - reboot\n2. s - shutdown\n3. c - cancel")
+            print("Incorrect option! please try again\nPower options: \n1. r - reboot\n2. s - shutdown\n3. c - cancel")
         end
 
     -- credits
     elseif input == "credits" then
-        print("Created by:\nStormPatrikCZ","\nTesters: \nMedas_cz45")
+        print("Created by:\nStormPatrikCZ\nTesters:\nMedas_cz45")
 
     elseif input == "exit" then
         print("EXITING...")
@@ -83,7 +75,6 @@ while true do
     else
         if not shell.run(input) then
             print("Invalid option. Type commands for help!")
-            shell.run("shell.lua")
         end
     end
 end

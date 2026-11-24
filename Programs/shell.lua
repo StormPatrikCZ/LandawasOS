@@ -3,7 +3,7 @@ local white = colors.white
 local green = colors.green
 
 -- System vars
-local version = "V0.9.0.1"
+local version = "V0.9.0.2"
 local autor = "By m0d2r"
 
 -- Information
@@ -68,7 +68,7 @@ while true do
         elseif input == "c" then
             print("Canceled!")
         else
-            print("Incorrect option! print\nPower options: \n1. r - reboot\n2. s - shutdown\n3. c - cancel")
+            print("Incorrect option! please try again\nPower options: \n1. r - reboot\n2. s - shutdown\n3. c - cancel")
         end
 
     -- credits

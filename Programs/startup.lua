@@ -6,7 +6,6 @@ term.setCursorPos(1,1)
 print("Updating SysActions.lua...")
 shell("delete SysActions.lua")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/tools/SysActions.lua SysActions.lua")
-print("Updated SysActions.lua...")
 term.clear()
 
 -- StartUp

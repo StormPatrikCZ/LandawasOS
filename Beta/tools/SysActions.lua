@@ -1,19 +1,9 @@
--- vars colors
-local green = colors.green
-local white = colors.white
-local red = colors.red
-
 -- Variables
-local type_install
 local choice
 local reboot
 local input_name
 
--- will be used in the future
--- local files = ("programs.lua", "SysActions.lua", "startup.lua")
-
 -- short
-local line = "---------------------------------------------------"
 local del = shell.run
 
 -- Startup
@@ -21,33 +11,64 @@ term.clear()
 term.setCursorPos(1,1)
 
 -- Ask
-print("Sys actions V0.1.2")
+print("Sys actions V1.1")
 print("1 = Update\n2 = Uninstall os\n3 = Clear old files\n4 = Rename computer")
 choice = read()
 
-if type_install == "1" then
-    print("Deleting old System apps...")
+if choice == "1" then
 
-    -- Files delete
-    shell.run("delete startup.lua")
-    shell.run("delete SysActions.lua")
-    term.clear()
-    
-    -- Delete Notice
-    term.setTextColor(green)
-    print("Old files has been deleted")
-    print("Downloading new System apps...")
-    term.setTextColor(white)
-    
-    -- Files download
-    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/start/startup.lua startup.lua")
-    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/tools/SysActions.lua SysActions.lua")
-    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/tools/programs.lua programs.lua")
-    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/start/shell.lua shell.lua")
-    term.setTextColor(green)
-    print("Your system is up to date!")
-    term.setTextColor(white)
+    -- Beta install
+    if type_install == "B"
+        print("Deleting old System apps...")
 
+        -- Files delete
+        shell.run("delete startup.lua")
+        shell.run("delete SysActions.lua")
+        term.clear()
+        
+        -- Delete Notice
+        term.setTextColor(green)
+        print("Old files has been deleted")
+        print("Updating System Apps...")
+        term.setTextColor(white)
+        
+        -- Files download
+        shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/start/startup.lua startup.lua")
+        shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/tools/SysActions.lua SysActions.lua")
+        shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/tools/programs.lua programs.lua")
+        shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/start/shell.lua shell.lua")
+        term.setTextColor(green)
+        print("Your system is up to date!")
+        term.setTextColor(white)
+
+    -- Release install
+    elseif type_install == "R"
+        print("Deleting old System apps...")
+
+        -- Files delete
+        shell.run("delete startup.lua")
+        shell.run("delete SysActions.lua")
+        term.clear()
+        
+        -- Delete Notice
+        term.setTextColor(green)
+        print("Old files has been deleted")
+        print("Updating System Apps...")
+        term.setTextColor(white)
+        
+        -- Files download
+        shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/start/startup.lua startup.lua")
+        shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/tools/SysActions.lua SysActions.lua")
+        shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/tools/programs.lua programs.lua")
+        shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/start/shell.lua shell.lua")
+        term.setTextColor(green)
+        print("Your system is up to date!")
+        term.setTextColor(white)
+
+    else
+        print("Invalid Option...")
+        return
+    end
     -- Reboot
     print("Restartt Y/N:")
     reboot_re = read()
@@ -90,15 +111,11 @@ elseif choice == "3" then
     -- clean
     if choice == "y" then
         print("Clearning Unused files from updates")
-        shell.run("delete UpdateBeta.lua")
-        shell.run("delete start.lua")
         shell.run("delete cleaner.lua")
-        shell.run("delete AutoUpd.lua")
         shell.run("delete install.lua")
         shell.run("delete startupBeta.lua")
         shell.run("delete uninstall.lua")
         shell.run("delete startupBeta.lua")
-        shell.run("delete gui.lua")
         shell.run("delete programs.lua")
         shell.run("delete shell.lua")
 
