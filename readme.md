@@ -26,7 +26,7 @@ LandawasOS is a custom operating system designed for [ComputerCraft: Tweaked](ht
 | `clean` | Remove old update files and free up disk space |
 | `update` | Update LandawasOS to the latest version |
 | `commands` | List all installed system commands |
-| `easy installer` | Guided installation wizard for new users |
+| `installer` | Guided installation wizard for new users |
 
 ## Installation
 
